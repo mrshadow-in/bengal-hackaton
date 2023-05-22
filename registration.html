@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Page</title>
+  <link rel="stylesheet" type="text/css" href="registration.css">
+  <script>
+    function sanitizeInput(input) {
+      // Remove leading/trailing white spaces
+      input = input.trim();
+      // Replace special characters
+      input = input.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+      // Additional sanitization or validation can be performed here if needed
+      return input;
+    }
+
+    function validateForm() {
+      var name = document.getElementById("name").value;
+      var email = document.getElementById("email").value;
+      var password = document.getElementById("password").value;
+
+      // Sanitize user inputs
+      name = sanitizeInput(name);
+      email = sanitizeInput(email);
+      password = sanitizeInput(password);
+
+      // Validate inputs
+      if (name === "" || email === "" || password === "") {
+        alert("Please fill in all fields.");
+        return false;
+      }
+
+      return true;
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h2>Registration</h2>
+    <form action="process_registration.php" method="POST" onsubmit="return validateForm();">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="form-group">
+        <button type="submit">Register</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
