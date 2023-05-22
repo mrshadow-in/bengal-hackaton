@@ -1,10 +1,15 @@
 body {
+<<<<<<< HEAD
     background-color: #9c27b0;
+=======
+    background-color: #f2f2f2;
+>>>>>>> 698e4ba5648e61ca83488ff1f7760fa1f05031e2
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
+<<<<<<< HEAD
 .container {
     max-width: 300px;
     margin: 20px auto;
@@ -29,11 +34,27 @@ h2 {
 
 form {
     margin-bottom: 20px;
+=======
+h2 {
+    text-align: center;
+}
+
+form {
+    background-color: #fff;
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+>>>>>>> 698e4ba5648e61ca83488ff1f7760fa1f05031e2
 }
 
 label {
     display: block;
+<<<<<<< HEAD
     color: #333;
+=======
+>>>>>>> 698e4ba5648e61ca83488ff1f7760fa1f05031e2
     margin-bottom: 10px;
 }
 
@@ -48,12 +69,17 @@ input[type="password"] {
 }
 
 input[type="submit"] {
+<<<<<<< HEAD
     background-color: #673ab7;
+=======
+    background-color: #4CAF50;
+>>>>>>> 698e4ba5648e61ca83488ff1f7760fa1f05031e2
     color: #fff;
     padding: 10px 15px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+<<<<<<< HEAD
 }
 
 .input-group {
@@ -69,12 +95,16 @@ input[type="submit"] {
     border: 1px solid #ccc;
     border-right: none;
     color: #666;
+=======
+    width: 100%;
+>>>>>>> 698e4ba5648e61ca83488ff1f7760fa1f05031e2
 }
 
 .error {
     color: red;
     margin-bottom: 10px;
 }
+<<<<<<< HEAD
 
 .signup-link {
     color: #fff;
@@ -89,3 +119,5 @@ input[type="submit"] {
 .signup-link a:hover {
     text-decoration: underline;
 }
+=======
+>>>>>>> 698e4ba5648e61ca83488ff1f7760fa1f05031e2
