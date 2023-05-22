@@ -9,10 +9,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
     // Save the registration information to the admin table
+<<<<<<< HEAD
     $host = '192.168.0.83';
     $db_username = 'localconnect';
     $db_password = 'Stark@123';
     $database = 'registration';
+=======
+    $host = 'dbaddresss';
+    $db_username = 'dbusername';
+    $db_password = 'dbpassword';
+    $database = 'dbname';
+>>>>>>> 698e4ba5648e61ca83488ff1f7760fa1f05031e2
 
     $conn = new mysqli($host, $db_username, $db_password, $database);
 
@@ -47,6 +54,7 @@ function sanitizeInput($input)
     <link rel="stylesheet" type="text/css" href="registration.css">
 </head>
 <body>
+<<<<<<< HEAD
     <div class="container">
         <div class="logo">
             <img src="EEE.png" alt="Logo">
@@ -65,5 +73,23 @@ function sanitizeInput($input)
             <input type="submit" value="Register">
         </form>
     </div>
+=======
+    <h2>Registration</h2>
+    <?php if (isset($error_message)) : ?>
+        <div class="error"><?php echo $error_message; ?></div>
+    <?php endif; ?>
+    <form method="POST" action="">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" maxlength="30" required>
+        <br>
+        <input type="submit" value="Register">
+    </form>
+>>>>>>> 698e4ba5648e61ca83488ff1f7760fa1f05031e2
 </body>
 </html>

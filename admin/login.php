@@ -13,10 +13,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $password = $_POST['password'];
 
     // Authenticate the user against the admin table
+<<<<<<< HEAD
     $host = '192.168.0.83';
     $db_username = 'localconnect';
     $db_password = 'Stark@123';
     $database = 'registration';
+=======
+    $host = 'dbaddress';
+    $db_username = 'dbusername';
+    $db_password = 'dbpassword';
+    $database = 'dbname';
+>>>>>>> 698e4ba5648e61ca83488ff1f7760fa1f05031e2
 
     $conn = new mysqli($host, $db_username, $db_password, $database);
 
@@ -54,6 +61,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <link rel="stylesheet" type="text/css" href="login.css">
 </head>
 <body>
+<<<<<<< HEAD
     <div class="container">
         <img src="EEE.png" alt="Logo" class="logo">
         <h2>Login</h2>
@@ -73,5 +81,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             Don't have an account? <a href="registration.php">Create an Account</a>
         </div>
     </div>
+=======
+    <h2>Login</h2>
+    <?php if (isset($error_message)) : ?>
+        <div class="error"><?php echo $error_message; ?></div>
+    <?php endif; ?>
+    <form method="POST" action="">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <input type="submit" value="Login">
+    </form>
+>>>>>>> 698e4ba5648e61ca83488ff1f7760fa1f05031e2
 </body>
 </html>

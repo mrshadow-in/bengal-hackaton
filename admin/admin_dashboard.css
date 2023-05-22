@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     background-color: #f1f1f1;
     font-family: Arial, sans-serif;
@@ -38,11 +39,21 @@ table {
 th,
 td {
     border: 1px solid #673ab7;
+=======
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid black;
+>>>>>>> 698e4ba5648e61ca83488ff1f7760fa1f05031e2
     padding: 8px;
     text-align: left;
 }
 
 th {
+<<<<<<< HEAD
     background-color: #673ab7;
     color: #fff;
 }
@@ -56,3 +67,7 @@ tr:hover {
     cursor: pointer;
 }
 
+=======
+    background-color: #f2f2f2;
+}
+>>>>>>> 698e4ba5648e61ca83488ff1f7760fa1f05031e2

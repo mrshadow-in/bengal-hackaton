@@ -10,10 +10,17 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
 }
 
 // Establish a connection to the MySQL database
+<<<<<<< HEAD
 $host = '192.168.0.83';
 $username = 'localconnect';
 $password = 'Stark@123';
 $database = 'registration';
+=======
+$host = 'dbadress';
+$username = 'dbusername';
+$password = 'dbpassword';
+$database = 'dbname';
+>>>>>>> 698e4ba5648e61ca83488ff1f7760fa1f05031e2
 
 $conn = new mysqli($host, $username, $password, $database);
 
@@ -30,6 +37,7 @@ if ($conn->connect_error) {
     <link rel="stylesheet" type="text/css" href="admin_dashboard.css">
 </head>
 <body>
+<<<<<<< HEAD
     <header>
         <div class="logo">
             <img src="EEE.png" alt="Logo">
@@ -37,6 +45,10 @@ if ($conn->connect_error) {
         <h2>Welcome, Admin!</h2>
         <a href="logout.php">Logout</a>
     </header>
+=======
+    <h2>Welcome, Admin!</h2>
+    <a href="logout.php">Logout</a>
+>>>>>>> 698e4ba5648e61ca83488ff1f7760fa1f05031e2
 
     <table>
         <tr>
